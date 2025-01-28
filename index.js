@@ -10,8 +10,8 @@ app.use(express.json());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "emailsender343@gmail.com",
-    pass: "hvkl erey qrwo tefv",
+    user: "email@gmail.com",
+    pass: "password",
   },
 });
 
@@ -21,8 +21,8 @@ app.post("/send-email", (req, res) => {
   const mailOptions = {
     from: "emailsender343@gmail.com",
     to,
-    subject: "التقرير السنوي لعام 2023 ",
-    text: "التقرير السنوي لعام 2023 لشركة أوقاف محمد بن عبد العزيز الجميح",
+    subject: "Sub",
+    text: "Text",
     attachments: [
       {
         filename: "document.pdf",
